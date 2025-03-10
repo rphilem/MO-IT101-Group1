@@ -1,4 +1,4 @@
-# Payroll System - Milestone 2 (MS2) Submission  
+# Payroll System - Milestone 2   
 
 ## Overview  
 This repository contains the Payroll System code developed for **MotorPH** as part of our coursework.  
