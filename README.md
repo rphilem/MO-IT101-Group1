@@ -1,3 +1,20 @@
+(Replace `[MM/DD/YYYY]` with the actual date mentor was added)
+
+---
+
+## ⚙️ Features Implemented:
+
+✔ Employee Information Storage  
+✔ Salary Calculation (including overtime)  
+✔ Government Deductions (SSS, Pag-IBIG, PhilHealth, Tax)  
+✔ Attendance Tracking  
+✔ Payroll Export to CSV  
+
+## 📂 Project Structure:
+
+
+
+
 Payroll System (MO-IT101-Group1)
 Milestone 2: Initial Code Submission
 At this time, our team’s code has been uploaded to GitHub.
