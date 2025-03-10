@@ -1,3 +1,19 @@
+# 🚀 Payroll System - Milestone 2 (MS2) Submission  
+
+## 📌 Overview  
+This repository contains the Payroll System code developed for **MotorPH** as part of our coursework.  
+It includes payroll processing functionalities, government deductions, and employee attendance tracking.  
+
+## 📝 Milestone 2: Initial Code Submission  
+At this time, our team’s code is **already uploaded to GitHub**.  
+
+### ✅ **Next Steps:**  
+- **[ ] Add our mentor as a collaborator to this repository**  
+- **[ ] Review the grading rubric for completeness**  
+- **[ ] Submit individual Camu reports with the required details**  
+
+### 📌 **Submission Details:**  
+
 (Replace `[MM/DD/YYYY]` with the actual date mentor was added)
 
 ---
