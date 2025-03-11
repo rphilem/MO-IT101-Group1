@@ -17,7 +17,9 @@ At this time, our team’s code is **already uploaded to GitHub**.
 (Replace `[MM/DD/YYYY]` with the actual date mentor was added)
 
 Repository Name: MO-IT101-Group1
+
 Link: https://github.com/rphilem/MO-IT101-Group1
+
 Date Added Mentor: [03/10/2025]
 
 ---
