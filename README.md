@@ -7,79 +7,61 @@ It includes payroll processing functionalities, government deductions, and emplo
 ## Milestone 2: Initial Code Submission  
 At this time, our team’s code is **already uploaded to GitHub**.  
 
-### **Next Steps:**  
-- **[ ] Add our mentor as a collaborator to this repository**  
-- **[ ] Review the grading rubric for completeness**  
-- **[ ] Submit individual Camu reports with the required details**  
+## Our latest version includes:
+- Refactored class files (`EmployeeMenu`, `PayrollProcessor`, etc.)
+- Cleaned Git history using `.gitignore` to remove `build/` and `dist/` folders
+- Synced successfully with GitHub after resolving merge issues
 
 ### **Submission Details:**  
 
-(Replace `[MM/DD/YYYY]` with the actual date mentor was added)
-
-Repository Name: MO-IT101-Group1
-
-Link: https://github.com/rphilem/MO-IT101-Group1
-
-Date Added Mentor: [03/10/2025]
+### Submission Details  
+- **Repository:** [MO-IT101-Group1](https://github.com/rphilem/MO-IT101-Group1)  
+- **Mentor Added:** — *03/10/2025*  
 
 ---
 
-## ⚙️ Features Implemented:
+##  Features Implemented:
 
-✔ Employee Information Storage  
-✔ Salary Calculation (including overtime)  
-✔ Government Deductions (SSS, Pag-IBIG, PhilHealth, Tax)  
-✔ Attendance Tracking  
-✔ Payroll Export to CSV  
-
-## 📂 Project Structure:
-
-
+✔ Interactive Employee Menu System  
+✔ Add, View, Update, Delete Employee (CRUD-ready)  
+✔ Submenus: Personal Info / Work Info / Government Numbers  
+✔ Payroll Calculation (Gross, Hourly, Semi-Monthly, Net Salary)  
+✔ Government Deductions (SSS, PhilHealth, Pag-IBIG, Tax)  
+✔ CSV Read and Write with Data Validation  
+✔ Deductions Table View  
+✔ `.gitignore` implemented (ignores compiled class files and `.jar`)  
+✔ Terminal Git Sync (via `pull --rebase` & `push`) 
 
 
 Payroll System (MO-IT101-Group1)
-Milestone 2: Initial Code Submission
-At this time, our team’s code has been uploaded to GitHub.
+Terminal Assessment: Final Code Submission
 
-Next Steps:
-Add Mentor as a Collaborator to the repository.
-Review the project rubric to ensure completeness.
-Submit the GitHub repository link individually in Camu.
-Submission Format (for Camu):
-
-## Project Structure (as of March 10, 2025):
+## Project Structure (as of April 11, 2025):
 
 ```
 PayrollSystem/
 ├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   ├── attendance/
-│   │   │   │   └── Attendance.java                # Tracks employee attendance
-│   │   │   ├── employee/
-│   │   │   │   └── Employee.java                  # Stores employee details
-│   │   │   ├── payrollsystem/
-│   │   │   │   ├── PayrollProcessor.java          # Handles salary calculations
-│   │   │   │   ├── payrollsystem.java             # Main entry point for payroll system
-│   │   ├── resources/
-│   │   │   ├── application.properties             # Configuration file for app settings
-│   │   │   ├── employees.csv                      # Sample employee data
-│   │   │   ├── payroll_reports/                   # Folder to store exported payroll reports
-│   │   │   ├── logs/                              # Folder for log files
-│   ├── test/
-│   │   ├── java/
-│   │   │   ├── com/
-│   │   │   │   ├── payrollsystem/
-│   │   │   │   │   ├── PayrollSystemTests.java    # Unit tests for payroll functionalities
-│   │   │   │   │   ├── EmployeeTests.java         # Tests employee-related functions
-│   │   │   │   │   ├── PayrollProcessorTests.java # Tests salary calculations
-│   │   │   │   │   ├── DeductionsTests.java       # Tests government deductions
-├── .gitignore                                     # Excludes unnecessary files from Git
-├── README.md                                      # Project description & setup guide
-├── pom.xml                                        # Maven build configuration
-├── docs/                                          # Documentation folder
-│   ├── project_requirements.md                    # Project requirements & scope
-│   ├── developer_guide.md                         # Developer setup & contribution guide
-│   ├── user_manual.md                             # User instructions for payroll system
-│   └── API_reference.md                           # API endpoints & usage guide
+│   ├── attendance/
+│   │   └── Attendance.java                  # (Optional stub for future use)
+│
+│   ├── employee/
+│   │   ├── Employee.java                    # Employee model
+│   │   ├── EmployeeMenu.java                # Interactive CLI menu
+│   │   └── CaseTest.java                    # Test launcher (was Main.java)
+│
+│   ├── payrollsystem/
+│   │   └── PayrollProcessor.java            # Handles CSV import, payroll logic, deductions
+│
+├── csv/
+│   └── ref/
+│       ├── Copy of MotorPH Employee Data - Employee Details.csv
+│       ├── Copy of Withholding Tax.xlsx
+│       ├── Copy of Philhealth Contribution.xlsx
+│       └── Copy of Pag-ibig Contribution.xlsx
+│
+├── dist/
+│   └── (ignored by Git) PayrollSystem.jar   # Auto-generated JAR (now ignored)
+├── build/                                   # (ignored auto-compiled .class files)
+├── .gitignore                               # Prevents pushing unnecessary build artifacts
+├── README.md                                # Project description & setup guide
 ```
