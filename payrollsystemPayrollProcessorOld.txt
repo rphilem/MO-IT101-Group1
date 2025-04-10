@@ -4,8 +4,7 @@
  */
 package payrollsystem;
 
-// This means: Hey Java, I’m going to use the Employee class from the employee package:)
-import employee.Employee; 
+import employee.Employee; //This means: Hey Java, I’m going to use the Employee class from the employee package :)
 import java.io.*;
 import java.util.*;
 
@@ -26,9 +25,9 @@ public class PayrollProcessor {
     public void testFilePath() {
         File file = new File(EMPLOYEE_CSV_PATH);
         if (file.exists()) {
-            System.out.println("File found: " + EMPLOYEE_CSV_PATH);
+            System.out.println("✅ File found: " + EMPLOYEE_CSV_PATH);
         } else {
-            System.out.println("File not found: " + EMPLOYEE_CSV_PATH);
+            System.out.println("❌ File not found: " + EMPLOYEE_CSV_PATH);
         }
     }
 
@@ -36,64 +35,65 @@ public class PayrollProcessor {
     // This function loads and parses employee data from the CSV file.
     // It also converts each CSV row into an Employee object and stores it in the 'employees' list.
     public void importEmployeesFromCSV() {
-    try (BufferedReader br = new BufferedReader(new FileReader(EMPLOYEE_CSV_PATH))) {
-        String line;
-        br.readLine(); // / Skip the first line (header)
+        try (BufferedReader br = new BufferedReader(new FileReader(EMPLOYEE_CSV_PATH))) {
+            String line;
+            br.readLine(); // Skip the header row since it's just column titles
 
-        while ((line = br.readLine()) != null) {
-            line = line.trim();
+            while ((line = br.readLine()) != null) {
+                String[] data = parseCSVLine(line);
 
-            // This skips lines that are blank or just commas
-            if (line.isEmpty() || line.replace(",", "").trim().isEmpty()) continue;
-
-            String[] data = parseCSVLine(line);
-
-            // This part skips broken/test data rows
-            if (data.length < 5 || data[0].trim().isEmpty()) {
-                if (DEBUG) System.out.println("⛔ Skipping invalid row: " + Arrays.toString(data));
-                continue;
-            }
-
-            // Now parse your data
-            try {
-                // Now I extract and clean all the data from the CSV row
-                int employeeID = Integer.parseInt(data[0].trim());
-                String name = data[2].trim() + " " + data[1].trim(); // FirstName LastName
-                String birthday = data[3].trim();
-                String address = data[4].trim();
-                String phoneNumber = data[5].trim();
-                String sssNumber = data[6].trim();
-                String philhealthNumber = data[7].trim();
-                String tinNumber = data[8].trim();
-                String pagibigNumber = data[9].trim();
-                String status = data[10].trim();
-                String position = data[11].trim();
-                double basicSalary = Double.parseDouble(data[13].replace(",", "").trim());
-                double riceSubsidy = Double.parseDouble(data[14].replace(",", "").trim());
-                double phoneAllowance = Double.parseDouble(data[15].replace(",", "").trim());
-                double clothingAllowance = Double.parseDouble(data[16].replace(",", "").trim());
-                double grossSemiMonthlyRate = Double.parseDouble(data[17].replace(",", "").trim());
-                double hourlyRate = Double.parseDouble(data[18].replace(",", "").trim());
-                
-                //I create a new Employee object with all the data above
-                Employee emp = new Employee(
-                    employeeID, name, status, position,
-                    basicSalary, riceSubsidy, phoneAllowance, clothingAllowance,
-                    grossSemiMonthlyRate, hourlyRate, 0.0, 0.0,
-                    birthday, phoneNumber, address, sssNumber, philhealthNumber, tinNumber, pagibigNumber
-                );
-
-                employees.add(emp);
-
-            } catch (Exception e) {
+                // Print the raw CSV line and parsed fields
+                if (DEBUG) System.out.println("Raw CSV Line: " + line); // Split the line into columns
+                if (DEBUG) System.out.println("Parsed Columns (" + data.length + "): " + Arrays.toString(data));
+                if (DEBUG) System.out.println(" Incomplete row, padding with empty values...");
                 if (DEBUG) System.out.println("⚠️ Error parsing row: " + Arrays.toString(data));
+
+                // Ensure the array has at least 21 elements by padding if necessary
+                if (data.length < 21) { // Skip the row if it doesn't have enough data fields
+                    System.out.println(" Incomplete row, padding with empty values...");
+                    data = Arrays.copyOf(data, 21);
+                    for (int i = 0; i < data.length; i++) {
+                        if (data[i] == null) data[i] = "0";
+                    }
+                }
+
+                try {
+                    int employeeID = Integer.parseInt(data[0].trim());
+                    String name = data[2].trim() + " " + data[1].trim(); // FirstName LastName
+                    String birthday = data[3].trim();
+                    String address = data[4].trim();
+                    String phoneNumber = data[5].trim();
+                    String sssNumber = data[6].trim();
+                    String philhealthNumber = data[7].trim();
+                    String tinNumber = data[8].trim();
+                    String pagibigNumber = data[9].trim();
+                    String status = data[10].trim();
+                    String position = data[11].trim();
+                    double basicSalary = Double.parseDouble(data[13].replace(",", "").trim());
+                    double riceSubsidy = Double.parseDouble(data[14].replace(",", "").trim());
+                    double phoneAllowance = Double.parseDouble(data[15].replace(",", "").trim());
+                    double clothingAllowance = Double.parseDouble(data[16].replace(",", "").trim());
+                    double grossSemiMonthlyRate = Double.parseDouble(data[17].replace(",", "").trim());
+                    double hourlyRate = Double.parseDouble(data[18].replace(",", "").trim());
+
+                    Employee emp = new Employee(
+                        employeeID, name, status, position,
+                        basicSalary, riceSubsidy, phoneAllowance, clothingAllowance,
+                        grossSemiMonthlyRate, hourlyRate, 0.0, 0.0,
+                        birthday, phoneNumber, address, sssNumber, philhealthNumber, tinNumber, pagibigNumber
+                    );
+
+                    employees.add(emp);
+
+                } catch (Exception e) {
+                    System.out.println("⚠️ Error parsing row: " + Arrays.toString(data));
+                }
             }
+        } catch (IOException e) {
+            System.out.println("⚠️ Error reading the CSV file: " + e.getMessage());
         }
-    } catch (IOException e) {
-        System.out.println("⚠️ Error reading the CSV file: " + e.getMessage());
     }
-}
-    // This method prints the main payroll report
+
     public void processPayroll() {
         // Print the table header and formatting lines
         String border = "=".repeat(200);
@@ -164,7 +164,6 @@ public class PayrollProcessor {
 
         System.out.println(border);
     }
-    // This is the table for printing detailed government deductions
     public void printDeductionTable() {
     String border = "=".repeat(150);
     String separator = "-".repeat(150);
@@ -211,9 +210,8 @@ public class PayrollProcessor {
             "TOTAL", "-", totalSSS, totalPhilHealth, totalPagibig, totalWTax, totalGovDeduction);
     System.out.println(border);
 }
-    // This is the actual gov deduction formula (SSS, PhilHealth, etc.) based on salary
     private void computeGovernmentDeductions(Employee emp) {
-    double salary = emp.getGrossSemiMonthlyRate() * 2; // This converts semi-monthly to monthly
+    double salary = emp.getGrossSemiMonthlyRate() * 2; // Monthly salary
 
     // SSS — simplified bracketed logic (example only; use actual table for precision)
     double sss = 0;
