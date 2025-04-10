@@ -12,11 +12,10 @@ At this time, our team’s code is **already uploaded to GitHub**.
 - Cleaned Git history using `.gitignore` to remove `build/` and `dist/` folders
 - Synced successfully with GitHub after resolving merge issues
 
-### **Submission Details:**  
-
 ### Submission Details  
 - **Repository:** [MO-IT101-Group1](https://github.com/rphilem/MO-IT101-Group1)  
-- **Mentor Added:** — *03/10/2025*  
+- **Mentor Added:** — *03/10/2025*
+- **Re-added** — *04/11/2025*   
 
 ---
 
