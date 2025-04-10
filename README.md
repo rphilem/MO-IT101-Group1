@@ -1,18 +1,15 @@
-# Payroll System - Milestone 2   
+# Terminal Assessment: Final Code Submission
 
 ## Overview  
 This repository contains the Payroll System code developed for **MotorPH** as part of our coursework.  
 It includes payroll processing functionalities, government deductions, and employee attendance tracking.  
 
-## Milestone 2: Initial Code Submission  
-At this time, our team’s code is **already uploaded to GitHub**.  
-
 ## Our latest version includes:
-- Refactored class files (`EmployeeMenu`, `PayrollProcessor`, etc.)
+- Refactored class files (`EmployeeMenu`, `PayrollProcessor`)
 - Cleaned Git history using `.gitignore` to remove `build/` and `dist/` folders
 - Synced successfully with GitHub after resolving merge issues
 
-### Submission Details  
+### Submission Details
 - **Repository:** [MO-IT101-Group1](https://github.com/rphilem/MO-IT101-Group1)  
 - **Mentor Added:** — *03/10/2025*
 - **Re-added** — *04/11/2025*   
@@ -64,3 +61,7 @@ PayrollSystem/
 ├── .gitignore                               # Prevents pushing unnecessary build artifacts
 ├── README.md                                # Project description & setup guide
 ```
+
+
+## MO-IT101 - Computer Programming 1
+**Term 2  SY 2024 - 25  Bachelor of Science in Information Technology  H1103**
