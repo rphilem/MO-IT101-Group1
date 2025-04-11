@@ -1,35 +1,35 @@
 Employee ID,Name,Status,Position,Basic Salary,RiceAllow,PhoneAllow,ClothingAllow,SSS,PhilHealth,Pag-IBIG,Tax,Net Salary 
-10001,Garcia Manuel III,Regular,Chief Executive Officer,90000,1500,2000,1000,4050,2700,1800,9000,29700
-10002,Lim Antonio,Regular,Chief Operating Officer,60000,1500,2000,1000,2700,1800,1200,6000,20550
-10003,Aquino Bianca Sofia,Regular,Chief Finance Officer,60000,1500,2000,1000,2700,1800,1200,6000,20550
-10004,Reyes Isabella,Regular,Chief Marketing Officer,60000,1500,2000,1000,2700,1800,1200,6000,20550
-10005,Hernandez Eduard,Regular,IT Operations and Systems,52670,1500,1000,1000,2370,1580,1053,5267,17815
-10006,Villanueva Andrea Mae,Regular,HR Manager,52670,1500,1000,1000,2370,1580,1053,5267,17815
-10007,San Jose Brad,Regular,HR Team Leader,42975,1500,800,800,1934,1289,860,4298,14657
-10008,Romualdez Alice,Regular,HR Rank and File,22500,1500,500,500,1013,675,450,2250,8112
-10009,Atienza Rosie,Regular,HR Rank and File,22500,1500,500,500,1013,675,450,2250,8112
-10010,Alvaro Roderick,Regular,Accounting Head,52670,1500,1000,1000,2370,1580,1053,5267,17815
-10011,Salcedo Anthony,Regular,Payroll Manager,50825,1500,1000,1000,2287,1525,1017,5083,17251
-10012,Lopez Josie,Regular,Payroll Team Leader,38475,1500,800,800,1731,1154,770,3848,13285
-10013,Farala Martha,Regular,Payroll Rank and File,24000,1500,500,500,1080,720,480,2400,8570
-10014,Martinez Leila,Regular,Payroll Rank and File,24000,1500,500,500,1080,720,480,2400,8570
-10015,Romualdez Fredrick,Regular,Account Manager,53500,1500,1000,1000,2408,1605,1070,5350,18067
-10016,Mata Christian,Regular,Account Team Leader,42975,1500,800,800,1934,1289,860,4298,14657
-10017,De Leon Selena,Regular,Account Team Leader,41850,1500,800,800,1883,1256,837,4185,14314
-10018,San Jose Allison,Regular,Account Rank and File,22500,1500,500,500,1013,675,450,2250,8112
-10019,Rosario Cydney,Regular,Account Rank and File,22500,1500,500,500,1013,675,450,2250,8112
-10020,Bautista Mark,Regular,Account Rank and File,23250,1500,500,500,1046,698,465,2325,8341
-10021,Lazaro Darlene,Probationary,Account Rank and File,23250,1500,500,500,1046,698,465,2325,8341
-10022,Delos Santos Kolby,Probationary,Account Rank and File,24000,1500,500,500,1080,720,480,2400,8570
-10023,Santos Vella,Probationary,Account Rank and File,22500,1500,500,500,1013,675,450,2250,8112
-10024,Del Rosario Tomas,Probationary,Account Rank and File,22500,1500,500,500,1013,675,450,2250,8112
-10025,Tolentino Jacklyn,Probationary,Account Rank and File,24000,1500,500,500,1080,720,480,2400,8570
-10026,Gutierrez Percival,Probationary,Account Rank and File,24750,1500,500,500,1114,743,495,2475,8798
-10027,Manalaysay Garfield,Probationary,Account Rank and File,24750,1500,500,500,1114,743,495,2475,8798
-10028,Villegas Lizeth,Probationary,Account Rank and File,24000,1500,500,500,1080,720,480,2400,8570
-10029,Ramos Carol,Probationary,Account Rank and File,22500,1500,500,500,1013,675,450,2250,8112
-10030,Maceda Emelia,Probationary,Account Rank and File,22500,1500,500,500,1013,675,450,2250,8112
-10031,Aguilar Delia,Probationary,Account Rank and File,22500,1500,500,500,1013,675,450,2250,8112
-10032,Castro John Rafael,Regular,Sales & Marketing,52670,1500,1000,1000,2370,1580,1053,5267,17815
-10033,Martinez Carlos Ian,Regular,Supply Chain and Logistics,52670,1500,1000,1000,2370,1580,1053,5267,17815
-10034,Santos Beatriz,Regular,Customer Service and Relations,52670,1500,1000,1000,2370,1580,1053,5267,17815
+10001,Garcia Manuel III,Regular,Chief Executive Officer,90000,1500,2000,1000,247.5,1800,100,17833,35010
+10002,Lim Antonio,Regular,Chief Operating Officer,60000,1500,2000,1000,247.5,1800,100,9167,24343
+10003,Aquino Bianca Sofia,Regular,Chief Finance Officer,60000,1500,2000,1000,247.5,1800,100,9167,24343
+10004,Reyes Isabella,Regular,Chief Marketing Officer,60000,1500,2000,1000,247.5,1800,100,9167,24343
+10005,Hernandez Eduard,Regular,IT Operations and Systems,52670,1500,1000,1000,247.5,1580,100,7334,21704
+10006,Villanueva Andrea Mae,Regular,HR Manager,52670,1500,1000,1000,247.5,1580,100,7334,21704
+10007,San Jose Brad,Regular,HR Team Leader,42975,1500,800,800,247.5,1289,100,4911,18214
+10008,Romualdez Alice,Regular,HR Rank and File,22500,1500,500,500,247.5,675,100,333,10572
+10009,Atienza Rosie,Regular,HR Rank and File,22500,1500,500,500,247.5,675,100,333,10572
+10010,Alvaro Roderick,Regular,Accounting Head,52670,1500,1000,1000,247.5,1580,100,7334,21704
+10011,Salcedo Anthony,Regular,Payroll Manager,50825,1500,1000,1000,247.5,1525,100,6873,21040
+10012,Lopez Josie,Regular,Payroll Team Leader,38475,1500,800,800,247.5,1154,100,3786,16594
+10013,Farala Martha,Regular,Payroll Rank and File,24000,1500,500,500,247.5,720,100,633,11150
+10014,Martinez Leila,Regular,Payroll Rank and File,24000,1500,500,500,247.5,720,100,633,11150
+10015,Romualdez Fredrick,Regular,Account Manager,53500,1500,1000,1000,247.5,1605,100,7542,22003
+10016,Mata Christian,Regular,Account Team Leader,42975,1500,800,800,247.5,1289,100,4911,18214
+10017,De Leon Selena,Regular,Account Team Leader,41850,1500,800,800,247.5,1256,100,4629,17809
+10018,San Jose Allison,Regular,Account Rank and File,22500,1500,500,500,247.5,675,100,333,10572
+10019,Rosario Cydney,Regular,Account Rank and File,22500,1500,500,500,247.5,675,100,333,10572
+10020,Bautista Mark,Regular,Account Rank and File,23250,1500,500,500,247.5,698,100,483,10861
+10021,Lazaro Darlene,Probationary,Account Rank and File,23250,1500,500,500,247.5,698,100,483,10861
+10022,Delos Santos Kolby,Probationary,Account Rank and File,24000,1500,500,500,247.5,720,100,633,11150
+10023,Santos Vella,Probationary,Account Rank and File,22500,1500,500,500,247.5,675,100,333,10572
+10024,Del Rosario Tomas,Probationary,Account Rank and File,22500,1500,500,500,247.5,675,100,333,10572
+10025,Tolentino Jacklyn,Probationary,Account Rank and File,24000,1500,500,500,247.5,720,100,633,11150
+10026,Gutierrez Percival,Probationary,Account Rank and File,24750,1500,500,500,247.5,743,100,783,11438
+10027,Manalaysay Garfield,Probationary,Account Rank and File,24750,1500,500,500,247.5,743,100,783,11438
+10028,Villegas Lizeth,Probationary,Account Rank and File,24000,1500,500,500,247.5,720,100,633,11150
+10029,Ramos Carol,Probationary,Account Rank and File,22500,1500,500,500,247.5,675,100,333,10572
+10030,Maceda Emelia,Probationary,Account Rank and File,22500,1500,500,500,247.5,675,100,333,10572
+10031,Aguilar Delia,Probationary,Account Rank and File,22500,1500,500,500,247.5,675,100,333,10572
+10032,Castro John Rafael,Regular,Sales & Marketing,52670,1500,1000,1000,247.5,1580,100,7334,21704
+10033,Martinez Carlos Ian,Regular,Supply Chain and Logistics,52670,1500,1000,1000,247.5,1580,100,7334,21704
+10034,Santos Beatriz,Regular,Customer Service and Relations,52670,1500,1000,1000,247.5,1580,100,7334,21704
