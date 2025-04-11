@@ -4,3 +4,28 @@
 *.jar
 *.log
 nbproject/private/
+
+# === NetBeans build ===
+nbproject/private/
+build/
+dist/
+
+# === Java compiled files ===
+*.class
+*.jar
+
+# === OS generated ===
+.DS_Store
+Thumbs.db
+
+# === Temp/debug/test files ===
+temp.txt
+cd
+javac
+java
+employees.txt
+payrollsystemPayrollProcessorOld.txt
+
+# === Excel and backup files (optional) ===
+*.xlsx
+*~
