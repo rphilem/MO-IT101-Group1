@@ -23,9 +23,9 @@ It includes payroll processing functionalities, government deductions, and emplo
 ✔ Submenus: Personal Info / Work Info / Government Numbers  
 ✔ Payroll Calculation (Gross, Hourly, Semi-Monthly, Net Salary)  
 ✔ Government Deductions (SSS, PhilHealth, Pag-IBIG, Tax)  
-✔ CSV Read and Write with Data Validation  
+✔ CSV Read and Write with Data Validation for importing employee data  
 ✔ Deductions Table View  
-✔ `.gitignore` implemented (ignores compiled class files and `.jar`)  
+✔ `.gitignore` implemented (ignores compiled class files and `.jar`) and repository cleanup
 ✔ Terminal Git Sync (via `pull --rebase` & `push`) 
 
 
@@ -61,6 +61,18 @@ PayrollSystem/
 ├── .gitignore                               # Prevents pushing unnecessary build artifacts
 ├── README.md                                # Project description & setup guide
 ```
+
+## Not Implemented
+
+**Attendance Integration**
+- Although Attendance.java exists, attendance data is not yet factored into salary calculations.
+- Salary is computed from static employee information only — no deductions/additions for absences, late, or overtime.
+**Payroll Export Menu Option**
+- While payroll can be exported to a CSV via PayrollProcessor, the export is not yet linked as an option in the interactive EmployeeMenu interface.
+**Search, Update, Delete Functions**
+- The menu placeholders are present, but the actual logic for modifying employee records is pending implementation.
+**Error Handling Enhancements**
+- Basic validation is done, but input error handling (example: invalid salary input) can be improved.
 
 
 ## MO-IT101 - Computer Programming 1
