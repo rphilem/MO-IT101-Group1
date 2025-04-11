@@ -80,16 +80,20 @@ PayrollSystem/
 ## Not Implemented
 
 **Attendance Integration**
-- Although Attendance.java exists, attendance data is not yet factored into salary calculations.
-- Salary is computed from static employee information only — no deductions/additions for absences, late, or overtime.
+- Although `Attendance.java` exists, attendance data is not yet linked to payroll logic.
+- No deductions or additions are made for absences, tardiness, or overtime at this stage.
 
 **Payroll Export Menu Option**
-- While payroll can be exported to a CSV via PayrollProcessor, the export is not yet linked as an option in the interactive EmployeeMenu interface.
+- Payroll export to CSV is currently handled by `PayrollProcessor.java` only.
+- This functionality is not yet connected to the interactive `EmployeeMenu` interface.
 
 **Search, Update, Delete Functions**
-- The menu placeholders are present, but the actual logic for modifying employee records is pending implementation.
+- The interactive menu includes placeholders, but search, update, and delete logic are not yet coded.
+- All employee records are handled through file reading and writing, without in-app editing.
 
 **Error Handling Enhancements**
+- Minimal validation is implemented.
+- Input errors such as incorrect formats, missing fields, or invalid values are not fully handled.
 - Basic validation is done, but input error handling (example: invalid salary input) can be improved.
 
 ## MO-IT101 - Computer Programming 1
