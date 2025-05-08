@@ -1,5 +1,8 @@
 # Terminal Assessment: Final Code Submission
 
+> Originally developed for **MO-IT101 – Computer Programming 1 (Term 2, SY 2024–2025)**  
+> Now continued under **MO-IT103 – Computer Programming 2 (Term 3, SY 2024–2025)** for ongoing implementation and improvement.
+
 ## Overview  
 This repository contains the Payroll System code developed for **MotorPH** as part of our coursework.  
 It includes payroll processing functionalities, government deductions, and employee attendance tracking.  
@@ -11,8 +14,24 @@ It includes payroll processing functionalities, government deductions, and emplo
 - Cleaned Git history using `.gitignore` to remove `build/` and `dist/` folders
 - Synced successfully with GitHub after resolving merge issues
 
-### Submission Details
-- **Repository:** [MO-IT101-Group1](https://github.com/rphilem/MO-IT101-Group1)  
+
+### Submission for MO-IT103 – Computer Programming 2
+
+- **Subject:** MO-IT103 – Computer Programming 2  
+- **Mentor:** Aldwin Nunag  
+- **Term:** Term 3, SY 2024–2025  
+- **Submission:** Homework #2 – App Implementation  
+- **Repository:** motorph-employee-app-v2 https://github.com/rphilem/motorph-employee-app-v2
+- **Mentor Email:** anunang@mmdc.mcl.edu.ph added as collaborator  
+
+---
+
+### Submission for MO-IT101 – Computer Programming 1 (Terminal Assessment)
+
+- Final code submission for Term 2, SY 2024–2025  
+- Git history preserved for traceability  
+- Repo renamed for continued use in MO-IT103
+- **Repository:** MO-IT101-Group1 https://github.com/rphilem/MO-IT101-Group1
 - **Mentor Added:** — *03/10/2025, expired invitation*
 - **Re-added** — *04/10/2025*   
 
@@ -96,5 +115,5 @@ PayrollSystem/
 - Input errors such as incorrect formats, missing fields, or invalid values are not fully handled.
 - Basic validation is done, but input error handling (example: invalid salary input) can be improved.
 
-## MO-IT101 - Computer Programming 1
-**Term 2  SY 2024 - 25  Bachelor of Science in Information Technology  H1103**
+## MO-IT103 - Computer Programming 2
+**Term 3  SY 2024 - 25  Bachelor of Science in Information Technology  S1102**
