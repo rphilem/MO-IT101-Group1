@@ -20,7 +20,7 @@ public class Employee {
     private double pagibigContribution;
     private double withholdingTax;
 
-    // ✅ Additional Fields from CSV Structure
+    // Additional Fields from CSV Structure
     private String birthday;
     private String phoneNumber;
     private String address;
@@ -29,7 +29,7 @@ public class Employee {
     private String tinNumber;
     private String pagibigNumber;
 
-    // ✅ Updated Constructor to Match Full CSV + PayrollProcessor.java
+    // Updated Constructor to Match Full CSV + PayrollProcessor.java
     public Employee(int employeeID, String name, String status, String position,
                     double basicSalary, double riceSubsidy, double phoneAllowance,
                     double clothingAllowance, double grossSemiMonthlyRate, double hourlyRate,
@@ -62,7 +62,7 @@ public class Employee {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    // ✅ Getters for Employee Attributes
+    // Getters for Employee Attributes
     public int getEmployeeID() { return employeeID; }
     public String getName() { return name; }
     public String getStatus() { return status; }
@@ -110,11 +110,11 @@ public class Employee {
     public String getTinNumber() { return tinNumber; }
     public String getPagibigNumber() { return pagibigNumber; }
 
-    // ✅ Setters (if needed)
+    // Setters (if needed)
     public void setGovDeductions(double govDeductions) { this.govDeductions = govDeductions; }
     public void setNetSalary(double netSalary) { this.netSalary = netSalary; }
 
-    // ✅ Formatted Display for Debugging
+    // Formatted Display for Debugging
     @Override
     public String toString() {
         return String.format(
